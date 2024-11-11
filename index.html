@@ -103,7 +103,16 @@
 
       </div>
 
-      <a href="assets/img/CURRRICULUM VITAE_original_3_compressed.pdf" download="mi_curriculum.pdf">Descargar CV</a>
+      <button onclick="descargarCV()">Descargar CV</button>
+
+      <script>
+        function descargarCV() {
+        // Crea un enlace temporal
+        const link = document.createElement('a');
+        link.href = 'assets/img/CURRRICULUM VITAE_original_3_compressed.pdf'; // Reemplaza con la ruta a tu CV
+        link.download = 'mi_curriculum.pdf'; // Nombre del archivo al descargar
+        }
+      </script>
 
     </section><!-- /Hero Section -->
 
