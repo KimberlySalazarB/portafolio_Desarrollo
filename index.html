@@ -71,32 +71,30 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/cerezos.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" style="height: 100vh; display: flex; justify-content: center; align-items: center;">
-        <h2>Hola 👋 Soy Nohereily Salazar</h2>
-        <p>estudiante de la carrera de Ingeniería Informática de VIII ciclo apasionada por la innovación, con un fuerte deseo de
-          aprender y crecer profesionalmente.<span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-
-
-        <button onclick="descargarCV()">Descargar CV</button>
-
-        <script>
-            function descargarCV() {
-            const link = document.createElement('a');
-            link.href = 'assets/img/CURRRICULUM VITAE_original_3_compressed.pdf';
-            link.download = 'mi_curriculum.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            }
-          </script>
-      </div>    
-
-    </section><!-- /Hero Section -->
+  
+      <img src="assets/img/cerezos.jpg" alt="Imagen de fondo" data-aos="fade-in" class="">
+  
+      <div class="container">
+        <div class="hero-content">
+          <h2>Hola  Soy Nohereily Salazar</h2>
+          <p>estudiante de la carrera de Ingeniería Informática de VIII ciclo apasionada por la innovación, con un fuerte deseo de aprender y crecer profesionalmente.<span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+          <a href="#" onclick="descargarCV()" class="download-button" aria-label="Descargar CV">Descargar CV</a>
+        </div>
+      </div>
+  
+    </section><script>
+      function descargarCV() {
+        const link = document.createElement('a');
+        link.href = 'assets/img/CURRRICULUM VITAE_original_3_compressed.pdf'; 
+        link.download = 'mi_curriculum.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
+  
+  
 
     <!-- About Section -->
     <section id="about" class="about section">
