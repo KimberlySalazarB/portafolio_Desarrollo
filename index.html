@@ -87,10 +87,12 @@
 
       <script>
         function descargarCV() {
-        // Crea un enlace temporal
         const link = document.createElement('a');
-        link.href = 'assets/img/CURRRICULUM VITAE_original_3_compressed.pdf'; // Reemplaza con la ruta a tu CV
-        link.download = 'mi_curriculum.pdf'; // Nombre del archivo al descargar
+        link.href = 'assets/img/CURRRICULUM VITAE_original_3_compressed.pdf';
+        link.download = 'mi_curriculum.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
         }
       </script>
 
